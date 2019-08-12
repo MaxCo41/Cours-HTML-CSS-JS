@@ -1,0 +1,145 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 06-août-2019, 16:08:49
+    Author     : µ
+*/
+body {
+    text-align: center;
+    background-image: url("images/mountain.jpg");
+}
+
+#photoProfil {
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: -50px;
+}
+#photoProfil p, h1 {
+    margin-left: 1px;
+    text-shadow: 1px 1px black;
+}
+#photoProfil img {
+    border-radius: 50px;
+    box-shadow: 5px 5px 5px 5px black;
+}
+h2 {
+    background: rgba(179,220,237,1);
+    background: -moz-linear-gradient(left, rgba(179,220,237,1) 0%, rgba(41,184,229,1) 50%, rgba(188,224,238,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(179,220,237,1)), color-stop(50%, rgba(41,184,229,1)), color-stop(100%, rgba(188,224,238,1)));
+    background: -webkit-linear-gradient(left, rgba(179,220,237,1) 0%, rgba(41,184,229,1) 50%, rgba(188,224,238,1) 100%);
+    background: -o-linear-gradient(left, rgba(179,220,237,1) 0%, rgba(41,184,229,1) 50%, rgba(188,224,238,1) 100%);
+    background: -ms-linear-gradient(left, rgba(179,220,237,1) 0%, rgba(41,184,229,1) 50%, rgba(188,224,238,1) 100%);
+    background: linear-gradient(to right, rgba(179,220,237,1) 0%, rgba(41,184,229,1) 50%, rgba(188,224,238,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3dced', endColorstr='#bce0ee', GradientType=1 );
+    color: white;
+    margin-top: 30px;
+    padding: 100px 0px 100px 0px;
+    font-size: 50px;
+    margin: 15px 15px 15px 15px;
+}
+img {
+    border: solid 5px darkgrey;
+    width: 220px;
+    margin-bottom: auto;
+    margin-left: auto;
+}
+ul {
+list-style: none;
+}
+
+.flip-box {
+background-color: transparent;
+width: 100px;
+height: 100px;
+perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+position: relative;
+width: 100%;
+height: 100%;
+transition: transform 0.8s;
+transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+transform: translate(10px) rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front, .flip-box-back {
+position: absolute;
+width: 100%;
+height: 100%;
+backface-visibility: hidden;
+display: block;
+margin-left: auto;
+margin-right: auto;
+
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-box-front {
+background-color: #bbb;
+color: black;
+}
+
+/* Style the back side */
+.flip-box-back {
+transform: rotateY(180deg);
+}
+#photoProfil h1, p {
+text-align: center;
+margin-left: -25px;
+}
+#experience {
+    width: 50%;
+    height: 50%;
+}
+#experience ul {
+    margin-top: 70px;
+}
+#skills {
+    width: 50%;
+    height: 50%;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
+#training {
+    width: 50%;
+    height: 50%;
+}
+#contact {
+    display: block;
+    width: 50%;
+    height: 50%;
+}
+.row2 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 270px;
+}
+#skills ul {
+    margin-top: 20px;
+}
+#training ul {
+   margin-top: 90px;
+}
+#contact p {
+    font-size: 1.6em;
+}
+
+#experience li {
+    font-size: 1.4em;
+}
+#training li {
+    font-size: 1.6em;
+}

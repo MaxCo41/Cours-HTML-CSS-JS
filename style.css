@@ -1,0 +1,81 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 08-août-2019, 9:19:38
+    Author     : µ
+*/
+li {
+    list-style: none;
+}
+ /* unvisited link */
+nav a:link, #nav a:link {
+  color: darkgrey;
+}
+
+/* visited link */
+nav a:visited, #nav a:visited {
+  color: lightblue;
+}
+
+/* mouse over link */
+nav a:hover, #nav a:hover {
+  color: red;
+  text-decoration: none;
+}
+
+/* selected link */
+nav a:active, #nav:hover {
+  color: red;
+} 
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    color:red;
+}
+nav ul li {
+    display: inline-block;
+    padding: 10px 5px 10px 5px;
+    background-color: grey;
+    text-align: center;
+}
+nav {
+    text-align: center;
+}
+#nav {
+    visibility: hidden;
+    display: none;
+    color: black;
+    text-align: center;
+}
+
+@media screen and (max-width: 800px){
+    nav {
+        visibility: hidden;
+        display: none;
+    }
+    #nav {
+        visibility: visible;
+        display: block;
+    }
+}
+form {
+    text-align: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.carousel-item img {
+    width: 80%;
+    height: 80%;
+}
+#carousel {
+    width: 70%;
+    height: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Caroussel & formulaire</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" crossorigin="anonymous">
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="01-ma_page.html">Ma page</a></li>
+                <li><a href="02-mes_animaux.html">Mes animaux favoris</a></li>
+                <li><a href="02.2-mes_animaux.html">Les animaux favoris de Isa</a></li>
+                <li><a href="03-mes_liens.html">Liens</a></li>
+                <li><a href="04-mes_images.html">Images</a></li>
+                <li><a href="CV.html">Mon CV</a></li>
+                <li><a href="work.html">Media</a></li>
+            </ul>
+        </nav>    
+       
+
+        <div class="dropdown" id="nav">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             Menu
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="01-ma_page.html">Ma page</a>
+              <a class="dropdown-item" href="02-mes_animaux.html">Mes animaux favoris</a>
+              <a class="dropdown-item" href="02.2-mes_animaux.html">Les animaux favoris de Isa</a>
+              <a class="dropdown-item" href="03-mes_liens.html">Liens</a>
+              <a class="dropdown-item" href="04-mes_images.html">Images</a>
+              <a class="dropdown-item" href="CV.html">Mon CV</a>
+              <a class="dropdown-item" href="work.html">Media</a>
+            </div>
+        </div>
+        
+        <!--FORMULAIRE-->
+    <form action="contact_ok.html" target="_blank" method="GET">
+        First name:<br>
+        <input type="text" name="firstname" value="Mickey">
+        <br>
+        Last name:<br>
+        <input type="text" name="lastname" value="Mouse">
+        <br><br>
+        <input type="radio" name="gender" value="male" checked> Male<br>
+        <input type="radio" name="gender" value="female"> Female<br>
+        <p> Vôtre pays: </p>
+        <select name="countries">
+            
+            <option value="Belgique">Belgique</option>
+            <option value="France">France</option>
+            <option value="Pays-bas">Pays-bas</option>
+            <option value="Luxembourg">Luxembourg</option>
+            <option value="Hors Benelux">Hors Benelux</option>
+        </select>
+        <br>
+        <br>
+        <textarea name="message">
+            Votre message...
+        </textarea>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+        <br>
+      <section id="carousel">    
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="images/dolphin.jpg" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="images/girafe.jpg" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="images/mouton.jpg" alt="Third slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      </section>
+        
+        
+        <script src="bootstrap.bundle.min.js/bootstrap.bundle.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    </body>
+</html>
